@@ -15,8 +15,8 @@ play_loop() {
 		echo ""
 		echo "Selected mix is $MIX"
 		
-		echo "" >> $HOME/Music/8tracks
-		echo $MIX >> $HOME/Music/8tracks
+		echo "" >> $HOME/music/8tracks
+		echo $MIX >> $HOME/music/8tracks
 		
 		echo "1) Play Mix"
 		echo "2) Continuous playback with similar mixes"
@@ -261,8 +261,8 @@ while true; do
 				read -p "Input URL: " url
 				echo ""
 				
-				echo "" >> $HOME/Music/8tracks
-				echo $url >> $HOME/Music/8tracks
+				echo "" >> $HOME/music/8tracks
+				echo $url >> $HOME/music/8tracks
 				
 				echo "1) Play Mix"
 				echo "2) Continuous playback with similar mixes"
