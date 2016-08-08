@@ -3,7 +3,7 @@
 # harmony89@gmail.com
 # please use and modify ^_^
 
-### prints line across mixinal ###
+### prints line across terminal ###
 print_line() {
 	printf "%$(tput cols)s\n"|tr ' ' '-'
 }
@@ -13,7 +13,7 @@ play_loop() {
 		MIX=$mix
 		
 		echo ""
-		echo "Slected mix is is $MIX"
+		echo "Selected mix is $MIX"
 		
 		echo "" >> $HOME/Music/8tracks
 		echo $MIX >> $HOME/Music/8tracks
@@ -125,7 +125,7 @@ while true; do
 				;;
 			2)
 				echo ""
-				echo "Search mixes filtered by artist match within the tracklist."
+				echo "Search mixes filtered by artist match within the track list."
 				echo "Example: Kanye_West, N^W^A"
 				print_line
 				
@@ -221,7 +221,7 @@ while true; do
 				;;
 			4)
 				echo ""
-				echo "Search fulltext search results for a string, ordered by relevance."
+				echo "Search the full text, results ordered by relevance."
 				print_line
 				
 				read -p "Input keyword: " inptkeyword
@@ -305,7 +305,7 @@ while true; do
 				echo ""
 				echo "       >           Skip mix."
 				echo "       ENTER       Skip track."
-				echo "       p / SPACE   Pause (pressing again unpauses)."
+				echo "       p / SPACE   Pause (pressing again resumes)."
 				echo "       q / CTRL-c  Stop playing and quit."
 				
 				echo ""
